@@ -1,0 +1,13 @@
+server:
+  port: 8802
+spring:
+  application:
+    name: user
+eureka:
+  instance:
+    appname: user
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
+  client:
+      service-url:
+        defaultZone: http://localhost:8800/eureka/
